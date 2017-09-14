@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick A Season!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z70-dP-rWw">
+                                <rect key="frame" x="285.33333333333331" y="40" width="165.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JhM-26-4pU">
+                                <rect key="frame" x="70" y="95" width="217" height="113"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yMB-Pq-dj5">
+                                        <rect key="frame" x="0.0" y="0.0" width="217" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVg-AB-WA1">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Spring"/>
+                                                <connections>
+                                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qch-n4-3Ga"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-rC-BHn">
+                                                <rect key="frame" x="123" y="0.0" width="94" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Summer"/>
+                                                <connections>
+                                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7s-xK-yXg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="DQR-Co-bzm">
+                                        <rect key="frame" x="0.0" y="72" width="217" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uH-pY-W6i">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Fall"/>
+                                                <connections>
+                                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2N-Xz-KiL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-VN-2Z3">
+                                                <rect key="frame" x="147" y="0.0" width="70" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Spring"/>
+                                                <connections>
+                                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ei-O3-0GB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="9bl-wm-LK8"/>
+                                    <constraint firstAttribute="height" constant="113" id="osM-O6-akr"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NsY-uE-yOP">
+                                <rect key="frame" x="335" y="95" width="340" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="88l-Rm-H1c"/>
+                                    <constraint firstAttribute="width" constant="340" id="Ill-KI-8EF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn9-nN-hgC">
+                                <rect key="frame" x="335" y="314" width="340" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="oL7-0E-iUk">
+                                        <variation key="heightClass=compact" constant="340"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="uvc-F1-Cm5">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mn9-nN-hgC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="48W-PA-8uD">
+                                <variation key="heightClass=compact" constant="137"/>
+                            </constraint>
+                            <constraint firstItem="mn9-nN-hgC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Jd-Uc-oHc">
+                                <variation key="heightClass=compact" constant="137"/>
+                            </constraint>
+                            <constraint firstItem="JhM-26-4pU" firstAttribute="top" secondItem="Z70-dP-rWw" secondAttribute="bottom" constant="29.5" id="Aat-Wa-K7r">
+                                <variation key="heightClass=compact" constant="25.000000000000014"/>
+                            </constraint>
+                            <constraint firstItem="Z70-dP-rWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AjN-MA-OFM"/>
+                            <constraint firstItem="mn9-nN-hgC" firstAttribute="top" secondItem="NsY-uE-yOP" secondAttribute="bottom" priority="30" constant="30" id="Bel-xq-HHU">
+                                <variation key="heightClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="NsY-uE-yOP" firstAttribute="top" secondItem="JhM-26-4pU" secondAttribute="bottom" constant="30" id="SLq-kA-apm">
+                                <variation key="heightClass=compact" constant="-113"/>
+                            </constraint>
+                            <constraint firstItem="Z70-dP-rWw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aBS-0E-cKh"/>
+                            <constraint firstItem="JhM-26-4pU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZ9-uo-rbv">
+                                <variation key="heightClass=compact" constant="-189.5"/>
+                            </constraint>
+                            <constraint firstItem="NsY-uE-yOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m1y-le-0Jk">
+                                <variation key="heightClass=compact" constant="137"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageLabel" destination="mn9-nN-hgC" id="8xS-to-SpD"/>
+                        <outlet property="imageView" destination="NsY-uE-yOP" id="SXP-bI-pWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.32608695652175" y="137.68115942028987"/>
+        </scene>
+    </scenes>
+</document>
