@@ -13,6 +13,7 @@
 		2226DDF51F915C1A00FBC400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2226DDF41F915C1A00FBC400 /* Assets.xcassets */; };
 		2226DDF81F915C1A00FBC400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2226DDF61F915C1A00FBC400 /* LaunchScreen.storyboard */; };
 		2264C7DD1F95178A0004AD50 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2264C7DC1F95178A0004AD50 /* ViewControllerTableViewCell.swift */; };
+		2264C7DF1F959B7B0004AD50 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2264C7DE1F959B7B0004AD50 /* BudgetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2226DDF71F915C1A00FBC400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2226DDF91F915C1A00FBC400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2264C7DC1F95178A0004AD50 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		2264C7DE1F959B7B0004AD50 /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2226DDED1F915C1A00FBC400 /* AppDelegate.swift */,
 				2226DDEF1F915C1A00FBC400 /* ViewController.swift */,
+				2264C7DE1F959B7B0004AD50 /* BudgetViewController.swift */,
 				2264C7DC1F95178A0004AD50 /* ViewControllerTableViewCell.swift */,
 				2226DDF11F915C1A00FBC400 /* Main.storyboard */,
 				2226DDF41F915C1A00FBC400 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				2226DDF01F915C1A00FBC400 /* ViewController.swift in Sources */,
 				2226DDEE1F915C1A00FBC400 /* AppDelegate.swift in Sources */,
 				2264C7DD1F95178A0004AD50 /* ViewControllerTableViewCell.swift in Sources */,
+				2264C7DF1F959B7B0004AD50 /* BudgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
