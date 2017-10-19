@@ -28,8 +28,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func transChangeSwitch(_ sender: UISegmentedControl) {
         if transChange.selectedSegmentIndex == 0{
-            updateLabels()
             imgView.image = UIImage(named: "bike")
+            updateLabels()
         }
         if transChange.selectedSegmentIndex == 1{
             updateLabels()
