@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="header">Find Your Camera!</string>
+    <string name="find_btn">Find</string>
+
+    <string-array name="tyoe_select">
+        <item>DSLR</item>
+        <item>Mirrorless</item>
+    </string-array>
+
+    <string name="radio1">Canon</string>
+    <string name="radio2">Nikon</string>
+    <string name="radio3">Sony</string>
+
+    <string name="check1">Entry-Level</string>
+    <string name="check2">Mid-Range</string>
+    <string name="check3">Professional</string>
+
+    <string name="resultTxt"></string>
+</resources>
