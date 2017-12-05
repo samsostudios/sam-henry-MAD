@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="title">Trip Finder</string>
+    <string name="country">Continent:</string>
+
+    <string-array name="spinner">
+        <item>America</item>
+        <item>Europe</item>
+        <item>Asia</item>
+        <item>Africa</item>
+        <item>Australia</item>
+    </string-array>
+
+    <string name="radio1">$</string>
+    <string name="radio2">$$</string>
+
+    <string name="btn">Find!</string>
+
+    <string name="suggestedDestination">Suggested Destination</string>
+</resources>
