@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BDGT</string>
+    <string name="income">Income</string>
+    <string name="setBud">Set Budget:</string>
+
+    <string name="food">Food</string>
+    <string name="transit">Transit</string>
+    <string name="rent">Rent</string>
+
+    <string name="set">Set</string>
+
+    <string name="amount">Amount</string>
+
+    <string name="addItem">Add Items:</string>
+
+    <string-array name="spinner">
+        <item>Food</item>
+        <item>Gas</item>
+        <item>Spending</item>
+    </string-array>
+
+    <string name="remaining">Remaining Budget:</string>
+
+    <string name="add">Add</string>
+</resources>
