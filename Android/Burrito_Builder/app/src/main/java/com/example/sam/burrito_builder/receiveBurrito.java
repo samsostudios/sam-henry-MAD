@@ -21,4 +21,5 @@ public class receiveBurrito extends AppCompatActivity {
         TextView textView = (TextView)findViewById(R.id.textView4);
         textView.setText("You should try " + location);
     }
+
 }
