@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Burrito_Builder</string>
+
+    <string name="title">Burrito Builder</string>
+    <string name="name">Name your Burrito!</string>
+
+    <string name="veg">Veggie</string>
+    <string name="meat">Meat</string>
+
+    <string name="burrito">Burrito</string>
+    <string name="taco">Taco</string>
+
+    <string name="addIngred">Add Ingredients:</string>
+    <string name="guac">Guacamole</string>
+    <string name="cheese">Cheese</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="cream">Sour Cream</string>
+
+    <string name="build">Build</string>
+    <string name="findBur">Find Burrito</string>
+
+    <string-array name="spinner">
+        <item>The Hill</item>
+        <item>Pearl Street</item>
+        <item>29th Street</item>
+    </string-array>
+</resources>
