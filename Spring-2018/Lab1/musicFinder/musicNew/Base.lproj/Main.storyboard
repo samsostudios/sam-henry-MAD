@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Songs-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="musicNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bCU-dg-SJm">
+                                <rect key="frame" x="27" y="38" width="320" height="291.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Top Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6c-Uz-cg4">
+                                        <rect key="frame" x="85.5" y="0.0" width="149" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6g-dm-Uc5">
+                                        <rect key="frame" x="0.0" y="75.5" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="9pv-A4-QxB" id="aeF-hq-vwJ"/>
+                                            <outlet property="delegate" destination="9pv-A4-QxB" id="hR1-F9-1c3"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfT-fd-MOv">
+                                <rect key="frame" x="58" y="398" width="258" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bCU-dg-SJm" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="18" id="IM6-Wv-EFI"/>
+                            <constraint firstItem="bCU-dg-SJm" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="P84-4a-u13"/>
+                            <constraint firstItem="cfT-fd-MOv" firstAttribute="top" secondItem="bCU-dg-SJm" secondAttribute="bottom" constant="68.5" id="UAC-Df-Brd"/>
+                            <constraint firstItem="cfT-fd-MOv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="58" id="jlj-MO-ntH"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="cfT-fd-MOv" secondAttribute="trailing" constant="59" id="sv2-PJ-1K1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Top Songs" image="note" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="artistPicker" destination="k6g-dm-Uc5" id="AMS-sr-6cW"/>
+                        <outlet property="songLabel" destination="cfT-fd-MOv" id="adP-De-Jwh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Record-->
+        <scene sceneID="1Yl-03-8xj">
+            <objects>
+                <viewController id="2nl-j2-mDr" customClass="ThirdViewController" customModule="musicNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gIW-ed-Wyo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="epF-pr-T2z">
+                                <rect key="frame" x="149" y="220" width="77" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3N-LG-FxX">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="recordAudio:" destination="2nl-j2-mDr" eventType="touchUpInside" id="YUg-H4-pzN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx2-RS-ZXF">
+                                        <rect key="frame" x="0.0" y="92" width="77" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="playAudio:" destination="2nl-j2-mDr" eventType="touchUpInside" id="I7J-mK-KDb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huG-gm-95C">
+                                        <rect key="frame" x="0.0" y="184" width="77" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopAudio:" destination="2nl-j2-mDr" eventType="touchUpInside" id="Bvh-re-pHI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="epF-pr-T2z" firstAttribute="centerX" secondItem="gIW-ed-Wyo" secondAttribute="centerX" id="33A-eP-z5m"/>
+                            <constraint firstItem="epF-pr-T2z" firstAttribute="centerY" secondItem="gIW-ed-Wyo" secondAttribute="centerY" id="waR-ra-OWV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8cG-48-MOt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Record" image="66-microphone" id="zuy-5U-pQg"/>
+                    <connections>
+                        <outlet property="playButton" destination="mx2-RS-ZXF" id="NIT-Gf-4xj"/>
+                        <outlet property="recordButton" destination="o3N-LG-FxX" id="ez8-TQ-qAe"/>
+                        <outlet property="stopButton" destination="huG-gm-95C" id="hVt-ET-qdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1f6-jn-xi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="724.58770614692662"/>
+        </scene>
+        <!--Listen-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="musicNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-jr-T4h">
+                                <rect key="frame" x="40" y="57" width="294.5" height="180.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Amazing Music!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-fF-5SU">
+                                        <rect key="frame" x="0.0" y="0.0" width="294.5" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaU-kv-8NB">
+                                        <rect key="frame" x="121.5" y="139.5" width="52" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Find!"/>
+                                        <connections>
+                                            <action selector="findMusic:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="O29-CE-YaF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wh9-jr-T4h" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="FBr-Tm-jgK"/>
+                            <constraint firstItem="Wh9-jr-T4h" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="37" id="UCE-3g-muc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Listen" image="ipod" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="2nl-j2-mDr" kind="relationship" relationship="viewControllers" id="5UP-ND-yda"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="66-microphone" width="12" height="24"/>
+        <image name="ipod" width="17" height="29"/>
+        <image name="note" width="15" height="24"/>
+    </resources>
+</document>

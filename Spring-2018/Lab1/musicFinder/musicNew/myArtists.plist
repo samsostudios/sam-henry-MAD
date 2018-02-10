@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   myArtists.plist
+   music
+
+   Created by Sam Henry on 2/8/18.
+   Copyright (c) 2018 Sam Henry. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>Blue Sky Black Death</key>
+        <array>
+            <string>Starry</string>
+            <string>Fire For Light</string>
+            <string>The Era We Sang</string>
+            <string>So long</string>
+        </array>
+        <key>Pretty Lights</key>
+        <array>
+            <string>Gold Coast Hustle</string>
+            <string>So Bright</string>
+            <string>Somewhere in the Darkest Night</string>
+            <string>Always All Ways</string>
+        </array>
+        <key>Flamingosis</key>
+        <array>
+            <string>Down For the Fifth Time</string>
+            <string>Now or Never</string>
+            <string>Beleive in Me</string>
+            <string>Hey Baby</string>
+        </array>
+        <key>De La Soul</key>
+        <array>
+            <string>Me Myseld and I</string>
+            <string>Drawn</string>
+            <string>In the Woods</string>
+            <string>Ego Trippin'</string>
+        </array>
+        <key>People Under the Stairs</key>
+        <array>
+            <string>Acid Raindrops</string>
+            <string>The Suite For Beaver</string>
+            <string>Empty Bottle of Water</string>
+            <string>Yo!</string>
+        </array>
+        <key>A Tribe Called Quest</key>
+        <array>
+            <string>Description of a Fool</string>
+            <string>Can I Kick It?</string>
+            <string>Electric Relaxation</string>
+            <string>8 Million Stories</string>
+        </array>
+    </dict>
+</plist>
