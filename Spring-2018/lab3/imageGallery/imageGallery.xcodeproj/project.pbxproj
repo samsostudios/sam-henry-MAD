@@ -62,10 +62,10 @@
 			children = (
 				2260BE712044DCB500C23442 /* AppDelegate.swift */,
 				2260BE752044DCB500C23442 /* Main.storyboard */,
-				2260BE8B20452B2000C23442 /* DetailViewController.swift */,
-				2260BE852044DDAD00C23442 /* CollectionViewCell.swift */,
-				2260BE89204525AC00C23442 /* CollectionSupplementaryView.swift */,
 				2260BE832044DD1A00C23442 /* CollectionViewController.swift */,
+				2260BE852044DDAD00C23442 /* CollectionViewCell.swift */,
+				2260BE8B20452B2000C23442 /* DetailViewController.swift */,
+				2260BE89204525AC00C23442 /* CollectionSupplementaryView.swift */,
 				2260BE782044DCB500C23442 /* Assets.xcassets */,
 				2260BE7A2044DCB500C23442 /* LaunchScreen.storyboard */,
 				2260BE7D2044DCB500C23442 /* Info.plist */,
