@@ -15,7 +15,6 @@ class AddResturantViewController: UIViewController, UITextFieldDelegate {
     
     var name = String()
     var link = String()
-    var newRest = Resturants()
     
     override func viewDidLoad() {
         addName.delegate = self
@@ -38,7 +37,7 @@ class AddResturantViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "doneSugue"{
             if addName.text?.isEmpty == false{
-                newRest = Resturants(name: name, url: link)
+                
             }
         }
     }
