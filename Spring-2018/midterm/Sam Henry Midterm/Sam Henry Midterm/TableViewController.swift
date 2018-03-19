@@ -54,8 +54,8 @@ class TableViewController: UITableViewController {
             //print(json)
             
             for item in json{
-                print(item["name"]!!)
-                print(item["url"]!!)
+//                print(item["name"]!!)
+//                print(item["url"]!!)
                 
                 guard let newName = item["name"] as? String,
                     let newlink = item["url"] as? String
@@ -66,7 +66,7 @@ class TableViewController: UITableViewController {
                 let newRestaurant = Resturants(name: newName, url: newlink)
                 self.resturants.append(newRestaurant)
             }
-            print(resturants)
+            print("restaurants: \(resturants)")
         }
         catch let jsonErr{
             print(jsonErr.localizedDescription)
@@ -127,7 +127,15 @@ class TableViewController: UITableViewController {
     }
  
     @IBAction func unwwindSegue(_ segue: UIStoryboardSegue){
-        
+        if segue.identifier == "doneSegue"{
+            let source = segue.source as! AddResturantViewController
+            if source.addName.text?.isEmpty == false{
+                let newRestaurant = Resturants(name: source.name, url: source.link)
+                resturants.append(newRestaurant)
+                print(resturants)
+            }
+        }
+        tableView.reloadData()
     }
 
     /*

@@ -15,11 +15,13 @@ class AddResturantViewController: UIViewController, UITextFieldDelegate {
     
     var name = String()
     var link = String()
+    var rest = [Resturants]()
     
     override func viewDidLoad() {
         addName.delegate = self
         addLink.delegate = self
         super.viewDidLoad()
+        print("rest: \(rest)")
 
         // Do any additional setup after loading the view.
     }
@@ -31,15 +33,19 @@ class AddResturantViewController: UIViewController, UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         name = addName.text!
+        print(name)
         link = addLink.text!
+        print(link)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "doneSugue"{
-            if addName.text?.isEmpty == false{
-                
-            }
-        }
+//        if segue.identifier == "doneSugue"{
+//            if addName.text?.isEmpty == false{
+//                let newItem = Resturants(name: name, url: link)
+//                
+//                
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {
