@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">netflix_find</string>
+
+    <string name="netflix">Netflix</string>
+
+    <string-array name="showTypes">
+        <item>TV Shows</item>
+        <item>Movies</item>
+        <item>Documentaries</item>
+    </string-array>
+
+    <string name="shwo_img">Show Image</string>
+    <string name="watch">Watch Now!</string>
+</resources>

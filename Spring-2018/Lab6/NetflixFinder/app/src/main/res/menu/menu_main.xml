@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/watch_now"
+        android:title="@string/watch"
+        android:icon="@drawable/ic_add"
+        android:showAsAction="ifRoom" />
+</menu>
