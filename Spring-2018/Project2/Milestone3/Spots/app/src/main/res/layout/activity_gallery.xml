@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/galleryLocationName"
+            android:textColor="#fff"
+            android:text=""
+            android:layout_weight="5"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/addLocationButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_button"
+                android:text="+"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:id="@+id/galleryImg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/galleryLocationDescription"
+        android:textColor="#fff"
+        android:layout_weight="10"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/galleryLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Location"
+        android:background="@drawable/round_corners_button"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+
+</LinearLayout>
