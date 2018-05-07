@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Final</string>
+
+    <string name="sign">Sign Up</string>
+
+    <string name="name">Name</string>
+    <string name="Class">Class</string>
+
+    <string-array name="workouts">
+        <item>Cardio</item>
+        <item>Strength</item>
+        <item>Flexibility</item>
+    </string-array>
+    <string name="title_activity_add">AddActivity</string>
+</resources>
